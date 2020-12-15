@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}{% endblock %}</title>
+    <style type="text/css">
+   .block1 {
+    background: black;
+    padding: 5px;
+    padding-right: 20px;
+    border: solid 1px black;
+    float: left;
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+   }
+     td {
+    text-align: center; /* Выравниваем текст по центру ячейки */
+   }
+   table {
+    width: 500px; /* Ширина таблицы */
+
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+   }
+  </style>
+
+</head>
+<body bgcolor="black" text="red">
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="p-2 text-dark" href="{% url 'home' %}">Главная</a>
+        </nav>
+
+
+        <div >
+            <table border="0">
+               <tr>
+                <th><h2>К430 (1026)</h2></th>
+                <th><h2>3 715 967</h2></th>
+               </tr>
+               <tr>
+                <th><h2>2874 (315)</h2></th>
+                <th><h2>1 405 190</h2></th>
+              </tr>
+                <tr>
+                <th><h2>К422 (241)</h2></th>
+                <th><h2>874 130</h2></th>
+              </tr>
+                 <tr>
+                 <th><h2>К407 (122)</h2></th>
+                  <th><h2>866 256</h2></th>
+                 </tr>
+                <tr>
+                 <th><h1>Итого</h1></th>
+                  <th><h1>6 861 543 руб.</h1></th>
+                 </tr>
+             </table>
+        </div>
+
+
+
+
+       ____
+        <div >
+            <table border="0" >
+               <tr>
+                    <th><h2>Бачатский</h2></th>
+                    <th><h2>Очерный</h2></th>
+                    <th><h3>Сибиргинский</h3></th>
+               </tr>
+               <tr>
+                    <th><h2>1 405 190</h2></th>
+                    <th><h2>1 405 190</h2></th>
+                    <th><h2>1 405 190</h2></th>
+              </tr>
+
+             </table>
+        </div>
+</body>
+</html>

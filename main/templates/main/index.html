@@ -1,0 +1,28 @@
+{% extends 'main/base.html'%}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+
+    <h1>Главная страница</h1>
+
+
+    <p>Последние постновки на ремонт</p>
+            <p>Нам нечего выводить</p>
+
+
+
+    {% for el in spi%}
+
+        <div class="alert alert-warning mt-2">
+            <h3>Номер ремонта: {{ el.pk }}</h3>
+            <h3>{{ el.vinechikle.gar_number }}</h3>
+            <h5>{{ el.state_down }}</h5>
+            <h5>{{ el.down_date_time }}</h5>
+        </div>
+
+
+    {% endfor %}
+{% endblock %}
